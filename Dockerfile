@@ -17,13 +17,13 @@ RUN curl -k https://download.elasticsearch.org/elasticsearch/elasticsearch/elast
     mv -f /elasticsearch-$ES_VERSION /opt/elasticsearch && \
     rm -f es.tar.gz
 
+# Define mountable directories.
+VOLUME ["/opt/elasticsearch/config", "/data"]
+
 # Adding the configuration file
 COPY elasticsearch.yml /opt/elasticsearch/config/elasticsearch.yml
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
-
-# Define mountable directories.
-VOLUME ["/data"]
 
 # Expose ports.
 #   - 9200: HTTP
