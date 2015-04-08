@@ -2,4 +2,4 @@
 set -e
 
 # Executing
-/opt/elasticsearch/bin/elasticsearch
+exec /opt/elasticsearch/bin/elasticsearch
