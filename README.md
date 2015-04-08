@@ -34,7 +34,8 @@ git pull後に
 
 ### 利用可能なボリューム
 
-    /data       # Elasticsearch データディレクトリ
+    /opt/elasticsearch/config       # Elasticsearch 設定ファイル
+    /data                           # Elasticsearch データ
 
 ### Figでの使用方法
 
