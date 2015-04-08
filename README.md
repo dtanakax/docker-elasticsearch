@@ -26,7 +26,7 @@ git pull後に
 
 起動
 
-    $ docker run -d -p 9200:9200 -p 9300:9300 tanaka0323/elasticsearch
+    $ docker run -d -p 9200:9200 -p 9300:9300 -ti tanaka0323/elasticsearch
 
 ブラウザで表示
 
