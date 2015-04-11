@@ -1,12 +1,15 @@
 ![elasticsearch 1.5.0](https://img.shields.io/badge/elasticsearch-1.5.0-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# docker-elasticsearch
+docker-elasticsearch
+=====================
 
-### Base Docker Image
+Base Docker Image
+---------------------
 
 [tanaka0323/java8](https://bitbucket.org/tanaka0323/docker-java8)
 
-### 説明
+説明
+---------------------
 
 Elasticsearch Dockerコンテナイメージです。
 
@@ -14,7 +17,8 @@ Elasticsearch Dockerコンテナイメージです。
 [Dockerとは？](https://docs.docker.com/)  
 [Docker Command Reference](https://docs.docker.com/reference/commandline/cli/)
 
-### 使用方法
+使用方法
+---------------------
 
 git pull後に
 
@@ -32,18 +36,21 @@ git pull後に
 
     http://<hostname>:9200
 
-### 利用可能なボリューム
+利用可能なボリューム
+---------------------
 
     /opt/elasticsearch/config       # Elasticsearch 設定ファイル
     /data                           # Elasticsearch データ
 
-### Docker Composeでの使用方法
+Docker Composeでの使用方法
+---------------------
 
 [Docker Composeとは](https://docs.docker.com/compose/)  
 
 [設定ファイル記述例](https://bitbucket.org/tanaka0323/compose-examples)
 
-### License
+License
+---------------------
 
 The MIT License
 Copyright (c) 2015 Daisuke Tanaka
