@@ -1,4 +1,4 @@
-![elasticsearch 1.5.0](https://img.shields.io/badge/elasticsearch-1.5.0-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![elasticsearch 1.5.1](https://img.shields.io/badge/elasticsearch-1.5.1-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 docker-elasticsearch
 =====================
