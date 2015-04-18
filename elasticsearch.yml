@@ -1,5 +1,8 @@
-path:
-  data: /data/data
-  logs: /data/log
-  plugins: /data/plugins
-  work: /data/work
+path.data: /data/data
+path.logs: /data/log
+path.plugins: /data/plugins
+path.work: /data/work
+
+#node.name:
+#node.master:
+#node.data:

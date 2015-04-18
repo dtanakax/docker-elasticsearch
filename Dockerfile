@@ -25,6 +25,11 @@ COPY elasticsearch.yml /opt/elasticsearch/config/elasticsearch.yml
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
+# Environment variables
+ENV NODE_NAME       **None**
+ENV NODE_MASTER     True
+ENV NODE_DATA       True
+
 # Expose ports.
 #   - 9200: HTTP
 #   - 9300: transport

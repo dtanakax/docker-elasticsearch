@@ -36,6 +36,38 @@ git pull後に
 
     http://<hostname>:9200
 
+クラスタ構成について
+---------------------
+
+以下は3ノードのクラスタ構成設定例です。
+
+1. マスターを起動
+
+        $ docker run --name <name> \
+                -d -p 9200:9200 -p 9300:9300 \
+                -e NODE_NAME=master \
+                -e NODE_MASTER=true \
+                -e NODE_DATA=false
+
+2. スレーブを起動
+
+        $ docker run --name <name> \
+                -e NODE_NAME=slave1 \
+                -e NODE_MASTER=false \
+                -e NODE_DATA=true
+
+        $ docker run --name <name> \
+                -e NODE_NAME=slave2 \
+                -e NODE_MASTER=false \
+                -e NODE_DATA=true
+
+環境変数
+---------------------
+
+- `NODE_NAME` クラスタ構成時のノード名
+- `NODE_MASTER` クラスタ構成時マスターノード指定 true or false
+- `NODE_DATA` クラスタ構成時データを保持 true or false
+
 利用可能なボリューム
 ---------------------
 
