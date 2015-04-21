@@ -11,7 +11,7 @@ Base Docker Image
 説明
 ---------------------
 
-Elasticsearch Dockerコンテナイメージです。
+Elasticsearch Dockerコンテナ作成設定
 
 [Elasticsearchとは？](https://www.elastic.co/products/elasticsearch)  
 [Dockerとは？](https://docs.docker.com/)  
