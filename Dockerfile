@@ -30,10 +30,11 @@ ENV NODE_NAME       **None**
 ENV NODE_MASTER     True
 ENV NODE_DATA       True
 
+ENTRYPOINT ["./start.sh"]
+
 # Expose ports.
 #   - 9200: HTTP
 #   - 9300: transport
 EXPOSE 9200 9300
 
-# Executing sh
-ENTRYPOINT ./start.sh
+CMD ["/opt/elasticsearch/bin/elasticsearch"]
