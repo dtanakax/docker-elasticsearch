@@ -1,8 +1,8 @@
 # Set the base image
-FROM tanaka0323/java8
+FROM dtanakax/java8
 
 # File Author / Maintainer
-MAINTAINER Daisuke Tanaka, tanaka@infocorpus.com
+MAINTAINER Daisuke Tanaka, dtanakax@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV ES_VERSION 1.5.2
