@@ -27,8 +27,8 @@ RUN chmod +x /start.sh
 
 # Environment variables
 ENV NODE_NAME       **None**
-ENV NODE_MASTER     True
-ENV NODE_DATA       True
+ENV NODE_MASTER     true
+ENV NODE_DATA       true
 
 ENTRYPOINT ["./start.sh"]
 
