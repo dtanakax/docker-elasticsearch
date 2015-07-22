@@ -5,7 +5,7 @@ FROM dtanakax/java8
 MAINTAINER Daisuke Tanaka, dtanakax@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV ES_VERSION 1.6.0
+ENV ES_VERSION 1.7.0
 
 RUN apt-get update && \
     apt-get install -y curl && \
